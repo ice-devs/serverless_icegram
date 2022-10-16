@@ -1,1 +1,1 @@
-# Serverless Icegram
+# Serverless Icegram App
