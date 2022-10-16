@@ -72,12 +72,9 @@ functions:
           method: post
           path: groups
           cors: true
-          reqValidatorName: RequestBodyValidator
-          documentation:
-            summary: Create a new group
-            description: Create a new group
-            requestModels:
-              'application/json': GroupRequest
+          request:
+            schemas:
+              application/json: ${file(models/create-group-request.json)}
 
   GetImages:
     handler: src/lambda/http/getImages.handler
